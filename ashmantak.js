@@ -42,7 +42,7 @@ var run = function() {
   window.requestAnimationFrame(run);
   t += 5;
   draw(33, 52 * Math.sin(t / 2400), t);
-  txt();
+  //txt();
 };
 
 run();
