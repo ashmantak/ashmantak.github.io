@@ -4,3 +4,10 @@ body {
   overflow: hidden;
   background: hsla(0,0%,50%, 0.9);
 }
+
+#top {
+  background-color: lightblue;
+  height: 20px;
+  width: 100%;	
+}
+ 
