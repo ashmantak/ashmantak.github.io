@@ -4,6 +4,15 @@ var $ = c.getContext('2d');
 var w = c.width = window.innerWidth;
 var h = c.height = window.innerHeight;
 
+
+var txt = function() {
+  var _t = "Breezy".split("").join(String.fromCharCode(0x2004));
+  $.font = "comic sans";
+  $.fillStyle = 'hsla(354, 50%, 50%, .8)';
+  $.fillText(_t, (c.width - $.measureText(_t).width) * 0.5, c.height * 0.5);
+  return _t;
+}
+
 var draw = function(a, b, t) {
   $.lineWidth = 0.8;
   $.fillStyle = 'hsla(12,60%,76%, 1)';
